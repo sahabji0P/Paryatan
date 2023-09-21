@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="box">
+        <span class="borderline"></span>
+        <form id="feedbackform" >
+            <h2>Feedback</h2>
+            <div class="inputBox">
+                <input type="text" name="name" id="name" required="required">
+                <span>Your Name</span>
+                <i></i>
+            </div>
+            <div class="inputBox">
+                <input type="email" name="email" id="email" required="required">
+                <span> Your E-mail</span>
+                <i></i>
+            </div>
+            <div class="inputBox">
+                <input type="text" name="phone" id="no" required="required">
+                <span>Your Number</span>
+                <i></i>
+            </div>
+            <br>
+
+            <div class="inputBox">
+                <textarea id="message" rows="4" placeholder="Enter feedback here" required="required"></textarea>
+
+            </div>
+            <div class="inputBox">
+                <button type="submit" id="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <script type="module" src="feedback.js"></script>
+</body>
+
+</html>
