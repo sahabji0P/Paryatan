@@ -9,7 +9,7 @@ window.addEventListener('scroll', () => {
 
 });
 
-let images = ['mall.png','qutub.jpg','lotus.jpg','indiagate.jpg','red.png','res.png','1.jpg']
+let images = ['mall.png','qutub.jpg','lotus.jpg','indiagate.jpg','red.jpg','res.png','1.jpg','g.png','a.jpg','j.jpg']
 
 setInterval(() => {
     let random = Math.floor(Math.random() * images.length);
