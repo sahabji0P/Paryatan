@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    /* background-image: url(https://media.tenor.com/NpfrJKok9CcAAAAC/starry-night-stars.gif); */
+    background: #160101;
+    overflow-x: hidden;
+}
+
+body .sec {
+    overflow-y: hidden;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+}
+
+.logo {
+    height: auto;
+    width: 200px;
+    color: #359381;
+    pointer-events: auto;
+    margin-right: 250px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #ff0000;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+
+.navigation a.active {
+    background: #359381;
+    color: #fff;
+}
+
+.navigation a.login, .navigation a.feedback {
+    background: none;
+    color: #fff;
+}
+
+.navigation a.explore{
+    background: #005d62;
+    color: #fff;
+}
+
+.parallax {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-bottom: 100px;
+
+}
+
+#text {
+    position: absolute;
+    font-size: 8em;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+
+.parallax img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-bottom: 100px;
+    pointer-events: none;
+    transition: 0.4 ease-in-out;
+}
+
+.sec {
+    position: relative;
+    background: hsl(168, 100%, 10%);
+    padding: 100px;
+    height: 100vh;
+    /* overflow-y: hidden; */
+}
+
+.sec h2 {
+    font-size: 3em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.sec p {
+    font-size: 1.2em;
+    color: #fff;
+    font-weight: 300;
+}
+
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-20px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+
+
+.sidenav {
+    /* margin-top: 10%; */
+    padding-top: 10%;
+    height: 100%;
+    width: 80px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    /* background-color: hsla(168, 100%, 10%, 0.727); */
+    z-index: 1000;
+    overflow-x: hidden;
+    transition: 0.5s;
+    align-content: center;
+
+}
+
+
+
+.sidenav div i {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    left: 30px;
+    padding: 20px 8px 30px 30px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #f9f9f9;
+    display: inline-block;
+
+}
+
+.sidenav div a {
+    margin-top: 10px;
+    visibility: hidden;
+    position: fixed;
+    padding: 20px 8px 30px 30px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #f9f9f9;
+}
+
+.sidenav div:hover i,
+.sidenav div:hover a {
+    color: #f1f1f1;
+    font-size: 28px;
+    transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+
