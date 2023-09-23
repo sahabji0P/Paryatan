@@ -32,8 +32,10 @@ document.getElementById("loginBtn").addEventListener("click", (e) => {
             // Signed in 
             const user = userCredential.user;
             alert(user.email+" Logged In");
+            document.getElementById("loginForm").reset();
+            
 
-            window.location.href = "..//home/index.html";
+            window.location.href = "..//Places/index.html";
 
 
 

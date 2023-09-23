@@ -31,15 +31,18 @@ document.getElementById("signupBtn").addEventListener("click", (e) => {
 
 
             // Signed in 
-            return set(ref(db, 'Users/' + phone), {
+            return set(ref(db, 'Users/' + user.uid), {
+                uid: user.uid,
                 email: email,
                 phone: phone
                 
             }).then(() =>{
-                alert(user.email+" Created"); 
+                
+                alert(user.email+" Created");
                 window.location.href = "Login.html";
 
             });
+            
 
         })
         

@@ -83,7 +83,7 @@ header {
 }
 
 
-.parallax a.em {
+.parallax h2.em {
     position: relative;
     color: #fff;
     text-transform: uppercase;
@@ -96,7 +96,7 @@ header {
     text-decoration: none;
 }
 
-.parallax a.em:hover {
+.parallax h2.em:hover {
     letter-spacing: 0.25em;
     background: var(--clr);
     text-shadow: 0 0 35px var(--clr);

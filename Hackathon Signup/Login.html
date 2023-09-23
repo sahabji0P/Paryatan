@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paryatan | Login</title>
     <link rel="stylesheet" href="Login.css">
 </head>
+
 <body>
-    <div class="box"  >
+    <div class="box">
         <span class="borderline"></span>
-        <form>
+        <form id="loginForm">
             <h2>Login</h2>
             <div class="inputbox">
                 <input type="text" id="emailLogin" required="required">
@@ -20,14 +22,28 @@
                 <input type="password" id="passLogin" required="required">
                 <span>Password</span>
                 <i></i>
-                </div>
-                <div class="links">
-                    <a href="#">Forgot Password</a>
-                    <a href="Signup.html">Signup</a>
-                </div>
-                <input type="submit" id="loginBtn" >
+            </div>
+            <div class="links">
+                <a href="#">Forgot Password</a>
+                <a href="Signup.html">Signup</a>
+            </div>
+            <input type="submit" id="loginBtn">
         </form>
-          </div>
-          <script type="module" src="login.js"></script>
+    </div>
+    <script type="text/javascript">
+        // function preventBack() {
+        //     window.history.forward();
+        // }
+
+        // setTimeout("preventBack()", 0);
+
+        // window.onunload = function () { null };
+        window.history.forward();
+        function noBack() {
+            window.history.forward();
+        }
+    </script>
+    <script type="module" src="login.js"></script>
 </body>
+
 </html>
