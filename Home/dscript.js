@@ -5,7 +5,7 @@ const client = document.getElementById("client");
 const contact = document.getElementById("contact");
 
 mySidenav.addEventListener("mouseover", function () {
-    mySidenav.style.width = "200px";
+    mySidenav.style.width = "250px";
     about.style.visibility = "visible";
     client.style.visibility = "visible";
     contact.style.visibility = "visible";

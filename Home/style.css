@@ -58,7 +58,8 @@ header {
     color: #fff;
 }
 
-.navigation a.login:hover, .navigation a.feedback:hover {
+.navigation a.login:hover,
+.navigation a.feedback:hover {
     background: #359381;
     color: #fff;
     transition: all 0.3s ease-in-out;
@@ -161,10 +162,13 @@ header {
     height: 100%;
     width: 80px;
     position: fixed;
-    z-index: 1;
     top: 0;
     left: 0;
-    background-color: transparent;
+    background-color: #111;
+    opacity: 0.8;
+    /* filter: blur(8px); */
+    /* -webkit-filter: blur(8px);
+    background-color: transparent; */
     /* background-color: hsla(168, 100%, 10%, 0.727); */
     z-index: 1000;
     overflow-x: hidden;
@@ -195,6 +199,7 @@ header {
     text-decoration: none;
     font-size: 20px;
     color: #f9f9f9;
+    transition: all 0.3s ease-in-out;
 }
 
 .sidenav div:hover i,
