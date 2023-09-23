@@ -46,7 +46,8 @@
             }
 
             function getDistance(orgin, destination) {
-                console.log(orgin, destination)
+                console.log("Origin: " +orgin)
+                console.log("Destination: " +destination)
                 var resultElement = document.getElementById("result");
                 var url = "https://api.nextbillion.io/distancematrix/json?origins=" + orgin + "&destinations=" + destination + "&mode=4w&key=" + apiKey;
                 fetch(url)
