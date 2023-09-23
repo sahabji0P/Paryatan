@@ -33,6 +33,10 @@ document.getElementById("loginBtn").addEventListener("click", (e) => {
             const user = userCredential.user;
             alert(user.email+" Logged In");
 
+            window.location.href = "..//home/index.html";
+
+
+
             // ...
         })
         .catch((error) => {

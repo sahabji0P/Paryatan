@@ -7,6 +7,84 @@
     font-family: "Poppins", sans-serif;
 }
 
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+}
+
+.logo {
+    height: auto;
+    width: 200px;
+    color: #359381;
+    pointer-events: auto;
+    margin-right: 250px;
+}
+
+
+.navigation a {
+    text-decoration: none;
+    color: #ff0000;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+
+.navigation a.active {
+    background: #359381;
+    color: #fff;
+}
+
+.navigation a.login, .navigation a.feedback {
+    background: none;
+    color: #fff;
+}
+.navigation a.login:hover, .navigation a.feedback:hover {
+    background: #359381;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.navigation a.explore{
+    display: inline-block;
+    position: relative;
+    color: white;
+}
+
+
+.navigation a.explore:hover:after {
+    transition: all 0.3s ease-in-out;
+    background-color: orange;
+
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.navigation a.explore:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: orange;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+
 body {
     display: flex;
     justify-content: center;
@@ -16,12 +94,13 @@ body {
 }
 
 .box {
-    position: relative;
-    width: 600px;
+    position: absolute;
+    width: 450px;
     height: 600px;
     background: #1c1c1c;
     border-radius: 8px;
     overflow: hidden;
+    padding-top: 40px;
 
 }
 
@@ -104,7 +183,7 @@ body {
     inset: 4px;
     padding: 2vw 4vw;
     border-radius: 8px;
-    max-width: 600px;
+    max-width: 500px;
     z-index: 2;
     display: flex;
     flex-direction: column;

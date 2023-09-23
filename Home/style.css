@@ -8,7 +8,6 @@
 }
 
 body {
-    /* background-image: url(https://media.tenor.com/NpfrJKok9CcAAAAC/starry-night-stars.gif); */
     background: #160101;
     overflow-x: hidden;
 }
@@ -53,15 +52,45 @@ header {
     color: #fff;
 }
 
-.navigation a.login, .navigation a.feedback {
+.navigation a.login,
+.navigation a.feedback {
     background: none;
     color: #fff;
 }
 
-.navigation a.explore{
-    background: #005d62;
+.navigation a.login:hover, .navigation a.feedback:hover {
+    background: #359381;
     color: #fff;
+    transition: all 0.3s ease-in-out;
 }
+
+.navigation a.explore {
+    display: inline-block;
+    position: relative;
+    color: white;
+}
+
+.navigation a.explore:hover:after {
+    transition: all 0.3s ease-in-out;
+    background-color: orange;
+
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.navigation a.explore:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: orange;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
 
 .parallax {
     position: relative;
@@ -96,7 +125,7 @@ header {
     position: relative;
     background: hsl(168, 100%, 10%);
     padding: 100px;
-    height: 100vh;
+    height: 120vh;
     /* overflow-y: hidden; */
 }
 
@@ -184,5 +213,3 @@ header {
         font-size: 18px;
     }
 }
-
-

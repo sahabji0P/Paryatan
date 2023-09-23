@@ -14,4 +14,5 @@ let images = ['mall.png','qutub.jpg','lotus.jpg','indiagate.jpg','red.jpg','res.
 setInterval(() => {
     let random = Math.floor(Math.random() * images.length);
     image.src= images[random];
-},1000);
+},1500);
+
