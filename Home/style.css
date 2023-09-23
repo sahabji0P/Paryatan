@@ -12,16 +12,18 @@ body {
     overflow-x: hidden;
 }
 
-body .sec {
+
+body .secMission {
     overflow-y: hidden;
 }
 
 header {
-    position: absolute;
+    background-color: #16010195;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 30px 100px;
+    padding: 15px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,57 +41,18 @@ header {
 
 .navigation a {
     text-decoration: none;
-    color: #ff0000;
+    color: #fff;
     padding: 6px 15px;
     border-radius: 20px;
     margin: 0 10px;
     font-weight: 600;
 }
 
-
-.navigation a.active {
+.navigation a:hover {
     background: #359381;
     color: #fff;
-}
-
-.navigation a.login,
-.navigation a.feedback {
-    background: none;
-    color: #fff;
-}
-
-.navigation a.login:hover,
-.navigation a.feedback:hover {
-    background: #359381;
-    color: #fff;
+    letter-spacing: 0.25em;
     transition: all 0.3s ease-in-out;
-}
-
-.navigation a.explore {
-    display: inline-block;
-    position: relative;
-    color: white;
-}
-
-.navigation a.explore:hover:after {
-    transition: all 0.3s ease-in-out;
-    background-color: orange;
-
-    transform: scaleX(1);
-    transform-origin: bottom left;
-}
-
-.navigation a.explore:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: orange;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
 }
 
 
@@ -99,15 +62,44 @@ header {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    flex-direction: column;
     margin-bottom: 100px;
 
 }
 
 #text {
-    position: absolute;
+    padding: 10px 20px;
+    position: relative;
     font-size: 8em;
     color: #fff;
+    letter-spacing: 0.1em;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    top: 0;
+    transition: 0.3s;
+}
+
+#text:hover {
+    letter-spacing: 0.25em;
+}
+
+
+.parallax a.em {
+    position: relative;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    letter-spacing: 0.1em;
+    font-weight: 800px;
+
+    padding: 5px 20px;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.parallax a.em:hover {
+    letter-spacing: 0.25em;
+    background: var(--clr);
+    text-shadow: 0 0 35px var(--clr);
 }
 
 
@@ -122,99 +114,23 @@ header {
     transition: 0.4 ease-in-out;
 }
 
-.sec {
+.secMission {
     position: relative;
     background: hsl(168, 100%, 10%);
     padding: 100px;
-    height: 120vh;
-    /* overflow-y: hidden; */
+    max-height: 120vh;
+
+    scroll-behavior: auto;
 }
 
-.sec h2 {
+.secMission h2 {
     font-size: 3em;
     color: #fff;
     margin-bottom: 10px;
 }
 
-.sec p {
-    font-size: 1.2em;
-    color: #fff;
+.secMission p {
+    font-size: 1em;
+    color: #f5eeee;
     font-weight: 300;
-}
-
-
-@keyframes slideInFromLeft {
-    0% {
-        transform: translateX(-20px);
-    }
-
-    100% {
-        transform: translateX(0);
-    }
-}
-
-
-
-
-.sidenav {
-    /* margin-top: 10%; */
-    padding-top: 10%;
-    height: 100%;
-    width: 80px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    opacity: 0.8;
-    /* filter: blur(8px); */
-    /* -webkit-filter: blur(8px);
-    background-color: transparent; */
-    /* background-color: hsla(168, 100%, 10%, 0.727); */
-    z-index: 1000;
-    overflow-x: hidden;
-    transition: 0.5s;
-    align-content: center;
-
-}
-
-
-
-.sidenav div i {
-    margin-top: 10px;
-    margin-bottom: 15px;
-    left: 30px;
-    padding: 20px 8px 30px 30px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #f9f9f9;
-    display: inline-block;
-
-}
-
-.sidenav div a {
-    margin-top: 10px;
-    visibility: hidden;
-    position: fixed;
-    padding: 20px 8px 30px 30px;
-    text-decoration: none;
-    font-size: 20px;
-    color: #f9f9f9;
-    transition: all 0.3s ease-in-out;
-}
-
-.sidenav div:hover i,
-.sidenav div:hover a {
-    color: #f1f1f1;
-    font-size: 28px;
-    transition: all 0.3s ease-in-out;
-}
-
-@media screen and (max-height: 450px) {
-    .sidenav {
-        padding-top: 15px;
-    }
-
-    .sidenav a {
-        font-size: 18px;
-    }
 }

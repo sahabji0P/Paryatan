@@ -24,27 +24,25 @@ document.getElementById("signupBtn").addEventListener("click", (e) => {
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
     const phone = document.getElementById("no").value;
-
-
-
+    
     createUserWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
-            // Signed in 
             const user = userCredential.user;
-            alert(user.email+" Created");
 
-            set(ref(db, 'Users/' + phone), {
+
+            // Signed in 
+            return set(ref(db, 'Users/' + phone), {
                 email: email,
-                phone: phone,
-                password: password
+                phone: phone
+                
+            }).then(() =>{
+                alert(user.email+" Created"); 
+                window.location.href = "Login.html";
+
             });
-            
-            window.location.href = "Login.html";
-
-
-
 
         })
+        
         .catch((error) => {
             const errorCode = error.code;
             const errorMessage = error.message;

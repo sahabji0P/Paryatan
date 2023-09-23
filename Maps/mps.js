@@ -1,30 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
+var apiKey = "b98e9dd2f9414231bae19340b76feff0";
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://maps-gl.nextbillion.io/maps/api/css" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-
-<body>
-
-    <body class="container">
-        <div class="m-3">
-            <button class="btn btn-success mb-2" onclick="getLocation()">
-                Get Distance</button>
-
-            <!-- <button onclick="getLocation()">Get Location</button> -->
-            <!-- <button onclick="gokhekra()">Go Khekra</button> -->
-
-            <div class="alert alert-success mb-2" id="result"></div>
-            <div class="card" id="map"></div>
-        </div>
-        <script src="https://maps-gl.nextbillion.io/maps/api/js"></script>
-        <script>
-            var apiKey = "b98e9dd2f9414231bae19340b76feff0";
+            
 
             function getLocation() {
                 if (navigator.geolocation) {
@@ -35,19 +11,20 @@
             }
 
             function showPosition(position) {
-                
+
                 var latitude = position.coords.latitude;
                 var longitude = position.coords.longitude;
                 var orgin = latitude + "," + longitude;
-                var destination = "28.0311,79.1271";
-
+                var destination = 28.5535 + "," + 77.2588;
                 getDistance(orgin, destination);
 
             }
 
+
             function getDistance(orgin, destination) {
-                console.log("Origin: " +orgin)
-                console.log("Destination: " +destination)
+                console.log("Origin: " + orgin);
+                console.log("Destination: " + destination);
+                
                 var resultElement = document.getElementById("result");
                 var url = "https://api.nextbillion.io/distancematrix/json?origins=" + orgin + "&destinations=" + destination + "&mode=4w&key=" + apiKey;
                 fetch(url)
@@ -76,11 +53,3 @@
                 var sDisplay = s > 0 ? s + (s == 1 ? " second" : " seconds") : "";
                 return hDisplay + mDisplay + sDisplay;
             }
-
-
-        </script>
-    </body>
-
-</body>
-
-</html>
