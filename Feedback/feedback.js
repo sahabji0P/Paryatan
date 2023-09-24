@@ -1,7 +1,7 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
 import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-database.js";
 
-// TODO: Replace the following with your app's Firebase project configuration
+
 const firebaseConfig = {
   apiKey: "AIzaSyAbw7x1Kt391Whp869oi6vPYWf-RhgnYrA",
   authDomain: "parytan-5b892.firebaseapp.com",
