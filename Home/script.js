@@ -45,7 +45,7 @@ window.addEventListener('scroll', () => {
 explore.addEventListener('click', () => {
     onAuthStateChanged(auth, (user) => {
         if (user) {
-            console.log(user.name);
+            console.log(user.email);
             window.location.href = "..//Places/index.html";
           // ...
         } else {
@@ -58,23 +58,6 @@ explore.addEventListener('click', () => {
         }
       });
 });
-
-// explore.addEventListener('click', () => {
-//     onAuthStateChanged(auth, (user) => {
-//         if (user) {
-//             console.log(user.name);
-//             window.location.href = "..//Places/index.html";
-//           // ...
-//         } else {
-//             window.location.href = "..//Login/index.html";
-
-//           // User is signed out
-//           // ...
-            
-//             console.log("no user");
-//         }
-//       });
-// });
 
 let images = ['mall.png','qutub.jpg','lotus.jpg','indiagate.jpg','red.jpg','res.png','1.jpg','g.png','a.jpg','j.jpg']
 
