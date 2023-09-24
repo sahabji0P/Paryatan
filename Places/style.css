@@ -36,62 +36,20 @@ header {
   margin-right: 250px;
 }
 
-
 .navigation a {
   text-decoration: none;
-  color: #ff0000;
+  color: #fff;
   padding: 6px 15px;
   border-radius: 20px;
   margin: 0 10px;
   font-weight: 600;
 }
 
-
-.navigation a.active {
+.navigation a:hover {
   background: #359381;
   color: #fff;
-}
-
-.navigation a.login,
-.navigation a.feedback {
-  background: none;
-  color: #fff;
-}
-
-.navigation a.login:hover,
-.navigation a.feedback:hover {
-  background: #359381;
-  color: #fff;
+  letter-spacing: 0.25em;
   transition: all 0.3s ease-in-out;
-}
-
-
-.navigation a.explore {
-  display: inline-block;
-  position: relative;
-  color: white;
-}
-
-
-.navigation a.explore:hover:after {
-  transition: all 0.3s ease-in-out;
-  background-color: orange;
-
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-
-.navigation a.explore:after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: orange;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
 }
 
 
