@@ -16,19 +16,19 @@
             
         </div>
         <div class="main-form">
-            <form action="index.php" method="get">
+            <form id="form" method="get">
                 <div>
                     <span>Name</span>
                     <input type="text" name="name" id="name" placeholder="Write your name here..." required>
                 </div>
                 <div>
                     <span>Email</span>
-                    <input type="email" name="name" id="name" placeholder="Write your email here..." required> 
+                    <input type="email" name="name" id="email" placeholder="Write your email here..." required> 
                 </div>
                 <div>
                     <!-- <---this is the select option--->
                     <span>How many people ?</span>
-                    <input type="number" id="people"> 
+                    <input type="number" id="people" placeholder="People"> 
                     <!-- <---this is the select option--->
                 </div>
                 <div>
@@ -42,16 +42,8 @@
                 <br>
                 <div>
                     <span>Nationality</span>
-                    <label for="radio1">
-                    <input type="radio" name="radio" id="radio1" checked />
-                    <span> Indian</span>
-                   </label>
-                   <label for="Foreigner">
-                    <input type = "radio" name="radio" id="Foreigner" />
-                    <span> Foreigner </span>
-                   </label>
-                    
-                    
+                    <input type="text" name="nationality" id="nationality" placeholder="Nationality" required>
+
                 </div>
                 
                 <div id="submit">
@@ -62,6 +54,7 @@
             </form>
         </div>
     </div>
+    <script type="module" src="script.js"></script>
 </body>
 
 </html>
