@@ -57,7 +57,7 @@ function getDistance(orgin, destination) {
                     distancedata.style.display = "block";
 
                     fromdata.innerText = "Current Location";
-                    destinationdata.innerText = "Lotus Temple"
+                    destinationdata.innerText = "Iskon Temple"
                     durationdata.innerText = secondsToHms(element.duration.value);
                     distancedata.innerText = ((element.distance.value > 999) ? (element.distance.value / 1000) + " KM" : element.distance.value + " M");
 

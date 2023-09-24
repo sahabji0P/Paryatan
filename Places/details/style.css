@@ -64,7 +64,7 @@ body{
     height: 200%;
     margin-left: 30px;
     margin-right: 0px;
-    margin-top: 10px;
+    margin-top: 50px;
     border-radius: 35px;
 }
 .box
@@ -152,4 +152,49 @@ th, td {
 
 .b-container td {
     padding-left: 8px;
+}
+
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+}
+
+.logo {
+    height: auto;
+    width: 200px;
+    color: #14826e;
+    pointer-events: auto;
+    margin-right: 250px;
+}
+
+
+.navigation a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+
+.navigation a.active {
+    background: #359381;
+    color: #fff;
+}
+
+.navigation a:hover {
+    background: #359381;
+    color: #fff;
+    letter-spacing: 0.25em;
+    transition: all 0.3s ease-in-out;
 }
