@@ -1,36 +1,122 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
-body{
-    height: 100vh;
-    background-color: #01000c;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+body {
+  height: 100vh;
+  background-color: #01000c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-h1{
-    color: #fff;
-    font-size: 55px;
-    margin: 80px 0;
+
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+
 }
+
+.logo {
+  height: auto;
+  width: 200px;
+  color: #359381;
+  pointer-events: auto;
+  margin-right: 250px;
+}
+
+
+.navigation a {
+  text-decoration: none;
+  color: #ff0000;
+  padding: 6px 15px;
+  border-radius: 20px;
+  margin: 0 10px;
+  font-weight: 600;
+}
+
+
+.navigation a.active {
+  background: #359381;
+  color: #fff;
+}
+
+.navigation a.login,
+.navigation a.feedback {
+  background: none;
+  color: #fff;
+}
+
+.navigation a.login:hover,
+.navigation a.feedback:hover {
+  background: #359381;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+
+.navigation a.explore {
+  display: inline-block;
+  position: relative;
+  color: white;
+}
+
+
+.navigation a.explore:hover:after {
+  transition: all 0.3s ease-in-out;
+  background-color: orange;
+
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.navigation a.explore:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: orange;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+
+h1 {
+  color: #fff;
+  font-size: 55px;
+  margin: 80px 0;
+}
+
 .swiper {
-    width: 80%;
-    height: 100%;
-  }
+  width: 80%;
+  height: 70%;
+  margin-top: 70px;
+}
 
-  .swiper-slide {
-    background-position: center;
-    background-size: cover;
-    width: 250px;
-  }
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 250px;
+}
 
-  .swiper-slide img {
-    display: block;
-    height: 70%;
-    width: 100%;
-    -webkit-box-reflect: below 1px linear-gradient(transparent, transparent , #0002 , #0004);
-  }
+.swiper-slide img {
+  display: block;
+  height: 70%;
+  width: 100%;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, #0002, #0004);
+}
+

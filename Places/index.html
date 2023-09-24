@@ -15,11 +15,20 @@
 
 <body onload="disableBackButton()">
 
-  <h1 id="s" class="s">SignOUT</h1>
+  <header>
+    <img src="..//Home/logo.png" class="logo">
+    <nav class="navigation">
+      <a href="..//Home/index.html" class="feedback">Home</a>
+      <a href="..//Feedback/page.html" id="s" class="active">SIGNOUT</a>
+
+    </nav>
+  </header>
+
+  <!-- <h1 id="s" class="s">SignOUT</h1>
   <h1>Near by places to visit!</h1>
-  <a href="..//Home/index.html">Home</a>
-  
-  
+  <a href="..//Home/index.html">Home</a> -->
+
+
 
   <!-- Swiper -->
   <div class="swiper mySwiper">
@@ -62,7 +71,7 @@
   <script type="module">
 
     import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
-    import { getAuth, onAuthStateChanged,signOut } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-auth.js";
+    import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-auth.js";
     import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-database.js";
 
     const firebaseConfig = {
