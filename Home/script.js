@@ -29,7 +29,7 @@ const explore = document.getElementById('em');
 
 window.addEventListener('scroll', () => {
     let value = window.scrollY;
-    let maxMargin = bodyHeight; // Define your maximum margin value
+    let maxMargin = bodyHeight - 350; // Define your maximum margin value
     let minMargin = 0;   // Define your minimum margin value
 
     // Calculate the new margin value

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team Section</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Poppins;
+           background: linear-gradient(black,rgb(15, 14, 14));
+        }
+        #heading{
+            color:rgb(247, 237, 237);
+            display: flex;
+            justify-content: center;
+            padding-top: 60px;
+            
+
+        }
+        .home-container{
+            margin-bottom: 50px;
+            margin-left: 78px;
+            width: 90%;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        .profile-card{
+            position: relative;
+            width: 210px;
+            height: 200px;
+            /* background-color: #fff; */
+            /* padding: 30px; */
+            border-radius: 50%;
+            /* box-shadow: -5px 8px 45px rgba(51, 51, 51, 0.126); */
+            transition: all .4s;
+            margin: 0 20px;
+        }
+        .profile-card:hover{
+            border-radius: 10px;
+            height: 260px;
+        }
+        .profile-card .img{
+            position:relative;
+            /* width: 90%;
+            height: 80%; */
+            /* border-radius: 70%; */
+            
+        }
+        .profile-card:hover img{
+            border-radius: 10px;
+            transform: translateY(-70px);
+        }
+        .img img{
+           
+            width: 100%;
+            border-radius: 55%;
+            transition: all .4s;
+            z-index: 99;
+        }
+        .caption{
+            text-align: center;
+            transform: translateY(-80px);
+            opacity: 0;
+            pointer-events: none;
+            transition: all .5s;
+        }
+        .profile-card:hover .caption{
+            opacity: 20;
+            pointer-events: all;
+        }
+        .caption h3{
+            font-size: 15px;
+            color: rgb(173, 181, 181);
+            font-weight: 600;
+        }
+        .caption p{
+            font-size: 15px;
+            font-weight: 500;
+            margin: 2px 0 12px 0;
+            color:rgb(243, 253, 253)
+        }
+        .caption .social-links i{
+            font-size: 21px;
+            margin: 0 3px;
+            cursor: pointer;
+            color: #30a8b1;
+            transition: all .4s;
+        }
+        .caption .social-links i:hover{
+            color: #4b7fba;
+        }
+    </style>
+</head>
+<body>
+    <div id="heading"><h1> ABOUT OUR TEAM</h1></div>
+    
+    <div class="home-container">
+        <div class="profile-card">
+            <div class="img">
+                <img src="khushii.jpeg">
+            </div>
+            <div class="caption">
+                <h3>Khushi Agarwal</h3>
+                <p>Bennett University</p>
+                <div class="social-links">
+                   <a href="https://www.linkedin.com/in/khushi-agarwal-427b9a249/" ><i class="fa-brands fa-linkedin"></i></a>
+                   
+                    <!-- <i class="fa-brands fa-twitter"></i> -->
+                </div>
+            </div>
+        </div>
+        <div class="profile-card">
+            <div class="img">
+                <img src="ritika.jpeg">
+            </div>
+            <div class="caption">
+                <h3>Ritika Pandit</h3>
+                <p>Bennett University</p>
+                <div class="social-links">
+                   <a href="https://www.linkedin.com/in/ritika-pandit-a64b32254/"><i class="fa-brands fa-linkedin"></i></a> 
+                   
+                </div>
+            </div>
+        </div>
+        <div class="profile-card">
+            <div class="img">
+                <img src="vaishnavi.jpeg">
+            </div>
+            <div class="caption">
+                <h3>Vaishnavi Agrawal</h3>
+                <p>Bennett University</p>
+                <div class="social-links">
+                   <a href="https://www.linkedin.com/in/tanishk-chaudhary-a6317b25b/"> <i class="fa-brands fa-linkedin"></i></a>
+                    
+                </div>
+            </div>
+        </div>
+            
+        <div class="profile-card">
+            <div class="img">
+                <img src="tuskii.jpeg">
+            </div>
+            <div class="caption">
+                <h3>Tanishk Chaudhary</h3>
+                <p>Bennett University</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/tanishk-chaudhary-a6317b25b/" ><i class="fa-brands fa-linkedin"></i></a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="profile-card">
+            <div class="img">
+                <img src="vaibhav.jpg">
+            </div>
+            <div class="caption">
+                <h3>Vaibhav Dhama</h3>
+                <p>Bennett University</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/vaibhav-dhama-28517a25b/"><i class="fa-brands fa-linkedin"></i></a>
+                  
+                </div>
+            </div>
+        </div>
+        <div class="profile-card">
+            <div class="img">
+                <img src="shash.jpg">
+            </div>
+            <div class="caption">
+                <h3>Shashwat Jain</h3>
+                <p>Bennett University</p>
+                <div class="social-links">
+                   <a href="https://www.linkedin.com/in/theshashwatjain/"><i class="fa-brands fa-linkedin">  </i></a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
